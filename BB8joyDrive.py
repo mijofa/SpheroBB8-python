@@ -1,12 +1,12 @@
 import pygame
 from pygame.locals import *
-from sys import exit
+from sys import exit, argv
 from bluepy import btle
 import math
 import struct
 import BB8_driver
 
-bb8 = BB8_driver.Sphero()
+bb8 = BB8_driver.Sphero(argv[1])
 bb8.connect()
 
 
